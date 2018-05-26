@@ -1,15 +1,3 @@
-const Discord = require('discord.js');
-const { Client, Util } = require('discord.js');
-const client = new Discord.Client();
-const { TOKEN ,PREFIX, GOOGLE_API_KEY } = require('./config1');
-const YouTube = require('simple-youtube-api');
-const ytdl = require('ytdl-core');
-
-
-const youtube = new YouTube(GOOGLE_API_KEY);
-
-const queue = new Map();
-
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -205,7 +193,6 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`بدء تشغيل: **${song.title}**`);
 }
-
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
