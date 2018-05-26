@@ -1466,4 +1466,4 @@ client.on("message", msg => {
 });
 
 
-client.login('BOT-TOKEN');
+client.login('BOT_TOKEN');
