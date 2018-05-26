@@ -171,4 +171,4 @@ LOka.on('message', message => {
 });
  
  
-LOka.login("bot-token")
+LOka.login("BOT_TOKEN")
