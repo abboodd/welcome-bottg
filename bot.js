@@ -111,4 +111,6 @@ client.on('message', message => {
     fs.writeFile('point.json', JSON.stringify(points), (err) => {
         if (err) console.error(err);
     });
-    }).login('BOT_TOKEN')
+   
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
