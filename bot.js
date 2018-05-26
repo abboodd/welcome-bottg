@@ -1,10 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
 client.on('ready', () => {
-  client.user.setGame('*help | *invite','https://www.twitch.tv/peery13');
-  console.log('---------------');
-  console.log(' Bot Is Online')
-  console.log('---------------')
+    console.log('I am ready!');
 });
 	
 client.on('message', message => {
@@ -1466,4 +1464,5 @@ client.on("message", msg => {
 });
 
 
-client.login('BOT_TOKEN');
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
